@@ -49,8 +49,14 @@ struct ContentView: View {
             }
             .navigationTitle("Goods to find")
             .toolbar {EditButton()}
+            
         }
+        
         Text("\(multiSelection.count) selections")
+//        { print("Items: \(multiSelection)")
+//        }
+        
+        Button("ion") {for a in multiSelection {print("---> \(a.uuidString)")}}
         
     }
 }
